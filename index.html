@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper ingame">
+        <header></header>
+        <main>
+            <div id="mouse-field">
+                <div id="mouse">
+                    <div id="mouse-inner">
+                        <img draggable="false" src='http://www.clker.com/cliparts/a/1/C/y/A/s/mouse-hi.png' alt='Mouse clip art'/>
+                    </div>
+                </div>
+            </div>
+            <section id="mouse-face">
+                <img src="http://www.clipartlord.com/wp-content/uploads/2014/07/mouse-face.png" alt="Echo Sierra Studio">
+                <p><b>Mouse Mania</b></p> 
+            </section>
+            <section id="settings">
+                <div class="slidecontainer">
+                    <label for="speed-range">Speed:</label>
+                    <input id="speed-range" type="range" min="0" max="100" value="50" class="slider">
+                </div>
+                <button class="btn primary" id="btn-fullscreen">
+                    Request Full Screen
+                    <br>
+                    <small class="color red">(esc to return)</small>
+                </button>
+                
+            </section>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="mousescript.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gloria Hallelujah', cursive, sans-serif, Arial;
+}
+
+body {
+    margin: 0;
+    font-size: 20px;
+}
+
+.wrapper.ingame {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    position:relative;
+}
+
+p {
+    margin: 2px 0;
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn.primary {background-color: rgb(210, 175, 2);} /* Green */
+.btn.green {background-color: #4CAF50;} /* Green */
+.btn.blue {background-color: #008CBA;} /* Blue */
+.btn.red {background-color: #f44336;} /* Red */ 
+.btn.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.btn.grey {background-color: #555555;} /* Black */
+
+.txt.primary {color: rgb(210, 175, 2);} /* Green */
+.txt.green {color: #4CAF50;} /* Green */
+.txt.blue {color: #008CBA;} /* Blue */
+.txt.red {color: #f44336;} /* Red */ 
+.txt.default {color: #e7e7e7;} /* Gray */ 
+.txt.grey {color: #555555;} /* Black */
+
+#mouse-field {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background: rgb(210, 175, 2) url(/images/cheese.png) repeat center center;
+    background-size: 300px 300px;
+
+    user-select: none;
+    
+}
+
+#mouse {
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    transform: translate(50vw, 50vh);
+    transform-origin: center center;
+    overflow: visible;
+
+}
+
+#mouse-inner {
+    width: 20px;
+    height: 60px;
+
+    position:absolute;
+    left: -10px;
+    top: -30px;
+    /* background:red; */
+}
+
+#mouse-inner img {
+    position:absolute;
+    height: 120px;
+    transform: rotate(180deg);
+    left: -20px;
+    top: -30px;
+}
+
+#mouse-face {
+    user-select: none;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+    height: 140px;
+    max-height: 50vh;
+    overflow: visible;
+    width: 140px;
+    max-width: 50vh;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.8);
+    border: 10px solid rgba(210, 175, 2, 0.5);
+    color: white;
+    text-shadow: 0 0 3px rgba(0,0,0,0.4);
+    white-space: nowrap;
+}
+
+#mouse-face img {
+    margin-bottom: -30px;
+    height: 100%;
+    margin-left: -13px;
+}
+
+.wrapper section#settings { display: none; }
+
+.wrapper.ingame section#settings {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.3);
+    min-height: 200px;
+    padding: 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 15px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* Set a specific slider handle width */
+    height: 15px; /* Slider handle height */
+    background: #d2af02; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #d2af02; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
