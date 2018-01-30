@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
 
     // audio
 
-    var audio = new Audio('/media/mouse-sound.mp3');
+    var audio = new Audio('./media/mouse-sound.mp3');
     var mouseInner = gi('mouse-inner');
     mouseInner.addEventListener('mousedown', audio.play.bind(audio));
 
